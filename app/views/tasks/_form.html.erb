@@ -1,0 +1,15 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :urgency %>
+  <%= f.text_field :urgency %>
+
+  <%= f.radio_button(:done, true) %>
+  <%= f.label(:done, "Done... 💪🏽") %>
+  <%= f.radio_button(:done, false) %>
+  <%= f.label(:done, "False... 💩") %>
+
+
+  <%= f.submit %>
+<% end %>

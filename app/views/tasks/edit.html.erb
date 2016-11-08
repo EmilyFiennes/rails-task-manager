@@ -1,0 +1,10 @@
+<h1>Edit the details of your task</h1>
+
+<h2> The task you wish to edit is: </h2>
+<h3>Task name:<%= @task.name %></h3>
+<p>Task status:<%= @task.done %></p>
+<p>Your task has an urgency rating of <%= @task.urgency %></p>
+
+<%= render 'form' %>
+
+<p><button><%= link_to "Back to all tasks", tasks_path %></button></p>
